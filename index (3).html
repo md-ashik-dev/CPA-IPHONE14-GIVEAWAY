@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone 14 Pro Giveaway</title>
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/sf-pro-display">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f9fafb, #ffffff);
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 1s ease-out;
+        }
+
+        .animate-slide-up {
+            animation: slideUp 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #2563eb, #0891b2);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .btn-primary {
+            background-color: #2563eb;
+            color: white;
+            padding: 1.25rem 2rem;
+            border-radius: 0.5rem;
+            font-size: 1.125rem;
+            font-weight: 500;
+            transition: background-color 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+        }
+
+        .image-container {
+            position: relative;
+            max-width: 28rem;
+            margin: 3rem auto;
+        }
+
+        .image-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, white, transparent 50%, transparent);
+        }
+    </style>
+</head>
+<body>
+    <main class="min-h-screen">
+        <section class="min-h-[80vh] flex items-center justify-center relative overflow-hidden">
+            <div class="container mx-auto px-6 py-24 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 gradient-text animate-slide-up">
+                        iPhone 14 Pro Giveaway
+                    </h1>
+
+                    <p class="text-xl md:text-2xl text-gray-600 mb-8 animate-fade-in">
+                        Win a brand new iPhone 14 Pro! Don't miss this amazing opportunity.
+                    </p>
+
+                    <div class="image-container animate-fade-in">
+                        <img
+                            src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-14-pro-finish-select-202209-6-7inch-deeppurple?wid=5120&hei=2880&fmt=p-jpg&qlt=80&.v=1663703841896"
+                            alt="iPhone 14 Pro Giveaway Prize"
+                            class="rounded-lg shadow-2xl w-full"
+                        />
+                        <div class="image-overlay"></div>
+                    </div>
+
+                    <div class="mt-8 animate-fade-in">
+                        <button 
+                            onclick="window.open('https://smrturl.co/a/s320dbda621/1549?s1=', '_blank')"
+                            class="btn-primary"
+                        >
+                            Participate Now!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
